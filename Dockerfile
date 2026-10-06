@@ -2,7 +2,8 @@
 FROM node:22-alpine AS build
 WORKDIR /app
 COPY package.json package-lock.json ./
-RUN npm ci
+# Install scripts disabled: no third-party code runs at install time
+RUN npm ci --ignore-scripts
 COPY . .
 ARG VITE_API_URL=""
 ARG VITE_STORE_NAME="Zuri Market"
