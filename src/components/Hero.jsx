@@ -29,7 +29,7 @@ const Hero = ({ storeName }) => {
           color: "var(--text-primary)",
           marginBottom: "12px",
         }}>
-          Minimal goods,<br />maximum quality.
+          African craft,<br />delivered to Europe.
         </h1>
 
         <p style={{
